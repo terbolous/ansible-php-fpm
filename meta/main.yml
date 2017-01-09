@@ -5,8 +5,8 @@ galaxy_info:
     license: BSD
     platforms:
     - name: Ubuntu
-        versions:
-        - xenial
+      versions:
+      - xenial
     categories:
     - development
     - web
