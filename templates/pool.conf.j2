@@ -1,4 +1,4 @@
-;{{ ansible_managed }}
+#{{ ansible_managed }}
 
 
 [{{ item.name }}]
@@ -6,7 +6,9 @@
 {% for directive, value in ((php_fpm_pool_defaults|default(dict())).items() + item.items()) if directive != "name" %}
 {% if value is mapping -%}
 {% for key, value2 in value.iteritems() %}
+{% if value2 -%}
 {{ directive }}[{{ key }}] = {{ value2 }}
+{% endif %}
 {% endfor %}
 {% else %}
 {{ directive }} = {{ value }}
