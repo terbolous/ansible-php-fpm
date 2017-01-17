@@ -1,6 +1,5 @@
 ---
 php_fpm_ini_path: /etc/php/7.0/fpm/php.ini
-php_fpm_ini_path: /etc/php/7.0/fpm/php.ini
 php_fpm_config_path: /etc/php/7.0/fpm/php-fpm.conf
 php_fpm_pool_d: /etc/php/7.0/fpm/pool.d
 
