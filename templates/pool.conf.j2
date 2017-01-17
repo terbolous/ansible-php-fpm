@@ -7,7 +7,7 @@
 {% if value is mapping -%}
 {% for key, value2 in value.iteritems() %}
 {% if value2 -%}
-{{ directive }}[{{ key }}] = {{ value2 }}
+{{ directive }}[{{ key }}] = '{{ value2 }}'
 {% endif %}
 {% endfor %}
 {% else %}
